@@ -1,0 +1,32 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+  	<title>Title goes HERE</title>
+  	<meta name="viewport" content="initial-scale=1.0">
+  	<meta charset="utf-8">
+  	<style>
+  		#map {
+  			height: 300%;
+  		}
+  		html, body {
+  			height: 50%;
+  			margin: 0;
+  			padding: 0;
+  		}
+  	</style>
+  </head>
+  
+  <body>
+    <h1>Heading</h1>
+	<p id="table">HI DALTON</p>
+	<div id="map"></div>
+  <script src="jquery-3.1.1.min.js"></script>
+<!--   <script src = "backcone.js"></script> -->
+  <script src = "backbone.js"></script>
+  </body>
+</html>
