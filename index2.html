@@ -18,7 +18,7 @@
             font-size: 18px;
             padding-left: 10%;
             padding-right: 10%;
-            padding-bottom: 30px;       
+            padding-bottom: 30px;
         }
         .description {
             font-family: 'Roboto', sans-serif;
@@ -61,11 +61,14 @@
     <div id="test" class = "distance">
     </div>
     <p id="test2" class = "schedules">
-        
+
     </p>
     <!-- First location: <input type="text" id="place1" value="name"><br> Last location: <input type="text" id="place2" value="gg"><br> -->
     <button type="button" name="button" class = "button" onclick="display()" value="submit">TEST ME</button>
     <script type="text/javascript">
+    /*
+    Locations of all classes on campus
+    */
         var geolocations = {
             "Cory": [37.875257, -122, 257324],
             "Soda": [37.875826, -122.258826],
@@ -424,23 +427,23 @@
                     }
                 }
             }
-            document.getElementById("test2").innerHTML = "Schedules Listed from Least to Greatest Distance <br><br> 1. " + 
-                "Monday: " + sorted_schedules[0][0] + 
-                "<br><br>&nbsp;&nbsp;&nbsp;Tuesday: " + sorted_schedules[0][1] + 
-                "<br><br>&nbsp;&nbsp;&nbsp;Wednesday: " + sorted_schedules[0][2] + 
-                "<br><br>&nbsp;&nbsp;&nbsp;Thursday: " + sorted_schedules[0][3] + 
-                "<br><br>&nbsp;&nbsp;&nbsp;Friday: " + sorted_schedules[0][4] + 
-                "<br><br> 2. " + 
-                "Monday: " + sorted_schedules[1][0] + 
-                "<br><br>&nbsp;&nbsp;&nbsp;Tuesday: " + sorted_schedules[1][1] + 
-                "<br><br>&nbsp;&nbsp;&nbsp;Wednesday: " + sorted_schedules[1][2] + 
-                "<br><br>&nbsp;&nbsp;&nbsp;Thursday: " + sorted_schedules[1][3] + 
-                "<br><br>&nbsp;&nbsp;&nbsp;Friday: " + sorted_schedules[1][4] + 
+            document.getElementById("test2").innerHTML = "Schedules Listed from Least to Greatest Distance <br><br> 1. " +
+                "Monday: " + sorted_schedules[0][0] +
+                "<br><br>&nbsp;&nbsp;&nbsp;Tuesday: " + sorted_schedules[0][1] +
+                "<br><br>&nbsp;&nbsp;&nbsp;Wednesday: " + sorted_schedules[0][2] +
+                "<br><br>&nbsp;&nbsp;&nbsp;Thursday: " + sorted_schedules[0][3] +
+                "<br><br>&nbsp;&nbsp;&nbsp;Friday: " + sorted_schedules[0][4] +
+                "<br><br> 2. " +
+                "Monday: " + sorted_schedules[1][0] +
+                "<br><br>&nbsp;&nbsp;&nbsp;Tuesday: " + sorted_schedules[1][1] +
+                "<br><br>&nbsp;&nbsp;&nbsp;Wednesday: " + sorted_schedules[1][2] +
+                "<br><br>&nbsp;&nbsp;&nbsp;Thursday: " + sorted_schedules[1][3] +
+                "<br><br>&nbsp;&nbsp;&nbsp;Friday: " + sorted_schedules[1][4] +
                 "<br><br> 3. " +
-                "Monday: " + sorted_schedules[2][0] + 
-                "<br><br>&nbsp;&nbsp;&nbsp;Tuesday: " + sorted_schedules[2][1] + 
-                "<br><br>&nbsp;&nbsp;&nbsp;Wednesday: " + sorted_schedules[2][2] + 
-                "<br><br>&nbsp;&nbsp;&nbsp;Thursday: " + sorted_schedules[2][3] + 
+                "Monday: " + sorted_schedules[2][0] +
+                "<br><br>&nbsp;&nbsp;&nbsp;Tuesday: " + sorted_schedules[2][1] +
+                "<br><br>&nbsp;&nbsp;&nbsp;Wednesday: " + sorted_schedules[2][2] +
+                "<br><br>&nbsp;&nbsp;&nbsp;Thursday: " + sorted_schedules[2][3] +
                 "<br><br>&nbsp;&nbsp;&nbsp;Friday: " + sorted_schedules[2][4];
             return sorted_schedules;
 
