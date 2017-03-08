@@ -183,6 +183,9 @@
             ["Anthro 2AC", ["T", "Th"], 11, "Hertz", 55432]
         ];
 
+/**
+Creates list of create_list_of_courses
+*/
         function create_list_of_courses(list_input) {
             var list_of_courses = [];
 
@@ -352,6 +355,9 @@
             return distance_list;
         }
 
+/**
+Creates schedule options based on distance_list
+*/
         function maxDistanceSchedule(numSchedule) {
             //  console.log("gg1");
             schedule_distances_list = [];
@@ -371,7 +377,9 @@
             }
             return total_distance;
         }
-
+/**
+Sorts schedules based on minimum distance list
+*/
         function sortSchedules() {
             console.log(schedules)
             var schedule_distances = [];
